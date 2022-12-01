@@ -11,16 +11,16 @@
     <name>Selenium Groovy Junit Template</name>
 
     <properties>
-        <selenium.version>3.12.0</selenium.version>
+        <selenium.version>4.6.0</selenium.version>
         <junit.version>4.12</junit.version>
-        <webdrivermanager.version>2.2.1</webdrivermanager.version>
-        <groovy.version>2.4.15</groovy.version>
+        <webdrivermanager.version>5.3.0</webdrivermanager.version>
+        <groovy.version>4.0.4</groovy.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
+            <groupId>org.apache.groovy</groupId>
+            <artifactId>groovy</artifactId>
             <version>${groovy.version}</version>
         </dependency>
         <dependency>

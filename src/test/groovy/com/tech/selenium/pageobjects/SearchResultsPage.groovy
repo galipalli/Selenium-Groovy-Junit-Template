@@ -10,8 +10,11 @@ class SearchResultsPage {
 
     WebDriver _driver
 
-    @FindBy(linkText = "Selenium - Web Browser Automation")
+    @FindBy(linkText = "Selenium")
     WebElement _lnkSelenium
+
+    @FindBy(xpath = "//*[text() = 'WebDriver - Selenium']")
+    public WebElement webDriverSeleniumBeu
 
     SearchResultsPage(driver) {
         this._driver = driver
@@ -19,6 +22,8 @@ class SearchResultsPage {
     }
 
     def assertSeleniumPresent(){
-        Assert.assertTrue(_lnkSelenium.isDisplayed())
+        Assert.assertTrue(webDriverSeleniumBeu.isDisplayed())
+//        Assert.assertTrue(_lnkSelenium.isDisplayed())
     }
+
 }

@@ -10,8 +10,17 @@ class GoogleSearchPage {
 
     WebDriver _driver
 
-    @FindBy(id = "lst-ib")
-    WebElement _searchBox
+//    @FindBy(id = "lst-ib")
+//    WebElement _searchBox
+
+    @FindBy(name = "q")
+    public WebElement _searchBox
+
+    @FindBy(xpath = "//*[text() = 'Reject all']")
+    public WebElement rejectAll
+
+    @FindBy(xpath = "//*[text() = 'Accept all']")
+    public WebElement acceptAll
 
     GoogleSearchPage(driver) {
         this._driver = driver
@@ -25,5 +34,6 @@ class GoogleSearchPage {
     def searchFor(searchTerm) {
         _searchBox.sendKeys(searchTerm + Keys.RETURN)
     }
+
 
 }

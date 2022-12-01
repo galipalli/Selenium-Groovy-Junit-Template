@@ -24,6 +24,7 @@ class RunTest{
     @Test
     void GoogleSearchPage() {
         googleSearchPage.openURL()
+        googleSearchPage.rejectAll.click()
         googleSearchPage.searchFor("Selenium")
         searchResultsPage.assertSeleniumPresent()
     }

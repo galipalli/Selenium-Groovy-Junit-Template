@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.edge.EdgeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.ie.InternetExplorerDriver
-import org.openqa.selenium.opera.OperaDriver
+//import org.openqa.selenium.opera.OperaDriver
 
 import java.util.concurrent.TimeUnit
 
@@ -34,10 +34,10 @@ class DriverFactory {
                 WebDriverManager.iedriver().setup()
                 _driver = new InternetExplorerDriver()
                 break
-            case DriverType.OPERA:
-                WebDriverManager.operadriver().setup()
-                _driver = new OperaDriver()
-                break
+//            case DriverType.OPERA:
+//                WebDriverManager.operadriver().setup()
+//                _driver = new OperaDriver()
+//                break
             default:
                 WebDriverManager.chromedriver().setup()
                 _driver = new ChromeDriver()
